@@ -3,7 +3,7 @@ name: docs
 on:
   push:
     branches:
-      - 'master'
+      - 'dev'
 
 jobs:
   trigger-mintlify:
@@ -18,5 +18,5 @@ jobs:
               owner: 'anant-writer',
               repo: 'docs',
               workflow_id: 'mintlify-action.yml',
-              ref: 'main',
+              ref: 'publish',
             });
